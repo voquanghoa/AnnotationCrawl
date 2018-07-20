@@ -35,7 +35,7 @@ namespace Fizzler.Systems.HtmlAgilityPack
     /// <summary>
     /// HtmlNode extension methods.
     /// </summary>
-    public static class HtmlNodeExtensions
+    public static partial class HtmlNodeExtensions
     {
         /// <summary>
         /// Determines whether this node is an element or not.
