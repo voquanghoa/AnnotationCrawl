@@ -98,10 +98,10 @@ namespace Qh.Annotation.WebCrawler.Annotations
         {
             var sourceNodes = SelectMany(sourceNode);
             var propertyType = propertyInfor.PropertyType;
-            
-            var elementType = propertyType.GetGenericTypeDefinition().GenericTypeArguments[0];
 
-            var array = sourceNodes.Select(x =>
+            var elementType = propertyType.GetElementType();
+
+            var targetArrayData = sourceNodes.Select(x =>
             {
                 var obj = Activator.CreateInstance(elementType);
 
@@ -111,7 +111,10 @@ namespace Qh.Annotation.WebCrawler.Annotations
 
             }).ToArray();
 
-            propertyInfor.SetValue(target, array);
+            var targetArray = Array.CreateInstance(elementType, sourceNodes.Count);
+            Array.Copy(targetArrayData, targetArray, sourceNodes.Count);
+
+            propertyInfor.SetValue(target, targetArray);
         }
     }
 }
