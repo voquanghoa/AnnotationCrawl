@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace Fizzler.Systems.HtmlAgilityPack.Annontations
+namespace Qh.Annotation.WebCrawler.Annotations
 {
     public class MapToAttrAttribute: MapToAttribute
     {

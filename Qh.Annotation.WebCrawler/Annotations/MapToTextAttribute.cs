@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using HtmlAgilityPack;
 
-namespace Fizzler.Systems.HtmlAgilityPack.Annontations
+namespace Qh.Annotation.WebCrawler.Annotations
 {
     public class MapToTextAttribute : MapToAttribute
     {

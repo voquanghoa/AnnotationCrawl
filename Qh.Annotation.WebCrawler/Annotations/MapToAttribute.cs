@@ -5,8 +5,9 @@ using System.Collections.Generic;
 using System.Reflection;
 using System.Text;
 using System.Linq;
+using Fizzler.Systems.HtmlAgilityPack;
 
-namespace Fizzler.Systems.HtmlAgilityPack.Annontations
+namespace Qh.Annotation.WebCrawler.Annotations
 {
     /// <summary>
     /// Map property by element

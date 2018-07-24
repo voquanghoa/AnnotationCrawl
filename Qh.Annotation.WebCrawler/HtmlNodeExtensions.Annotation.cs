@@ -19,18 +19,16 @@
 //
 #endregion
 
-namespace Fizzler.Systems.HtmlAgilityPack
+namespace Qh.Annotation.WebCrawler
 {
     #region Imports
 
     using System;
     using System.Collections.Generic;
-    using System.Diagnostics;
     using System.Linq;
-    using System.Text;
     using System.Reflection;
     using global::HtmlAgilityPack;
-    using Fizzler.Systems.HtmlAgilityPack.Annontations;
+    using Qh.Annotation.WebCrawler.Annotations;
 
     #endregion
 
